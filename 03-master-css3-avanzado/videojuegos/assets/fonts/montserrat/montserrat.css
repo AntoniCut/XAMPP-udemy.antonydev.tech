@@ -1,0 +1,16 @@
+/*  ************************************************************************************  */
+/*  **********  /14-maquetacion-web-3/assets/fonts/montserrat/montserrat.css  **********  */
+/*  ************************************************************************************  */
+
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('./Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('./Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-style: italic;
+}

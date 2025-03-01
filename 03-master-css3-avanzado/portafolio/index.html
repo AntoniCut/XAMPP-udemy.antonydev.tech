@@ -1,0 +1,192 @@
+<!--  ----------------------------------------------  -->
+<!--  ----------  /udemy.antonydev.tech/  ----------  -->
+<!--  ----------  /master-css3-avanzado/  ----------  -->
+<!--  ----------  /portafolio/  --------------------  -->
+<!--  ----------  /index.html  ---------------------  -->
+<!--  ----------------------------------------------  -->
+
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximun-scale=1">
+    <link rel="shortcut icon" href="./assets/favicon/css3-favicon.ico" type="image/x-icon">
+
+    <!--  Cargamos las Fuentes.  -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/poppins/poppins.css" />
+
+    <!--  Cargamos las Hojas de Estilo  -->
+    <link rel="stylesheet" href="/udemy.antonydev.tech/master-css3-avanzado/portafolio/assets/css/reset.css" />
+    <link rel="stylesheet" href="/udemy.antonydev.tech/master-css3-avanzado/portafolio/assets/css/scroll.css" />
+    <link rel="stylesheet" href="/udemy.antonydev.tech/master-css3-avanzado/portafolio/assets/css/styles.css" />
+    <link rel="stylesheet" href="/udemy.antonydev.tech/master-css3-avanzado/portafolio/assets/css/loader.css" />
+    <link rel="stylesheet" href="/udemy.antonydev.tech/master-css3-avanzado/portafolio/assets/css/responsive.css" />
+
+    <!-- <link rel="stylesheet" href=".assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/scroll.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/loader.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" /> -->
+
+    <!--  -----  Cargamos libreria jQuery  -----  -->
+    <script src="./assets/jquery/core/jquery-3.7.1.min.js"> </script>
+
+    <!--  -----  Scripts  -----  -->
+    <script type="module" src="./main.js" defer> </script>
+        
+    <title> Portafolio - Maquetación Web 1 </title>
+
+</head>
+
+
+<body>
+
+    <div class="layout">
+
+        <!--  **********  Barra Lateral (info usuario)  **********  -->
+        <aside class="layout__aside">
+
+            <section class="aside__user-info">
+
+                <!--  **********  Informacion General de Usuario  **********  -->
+                <div class="user-info__general">
+
+                    <div class="user-info__container-image">
+                        <img src="./assets/img/default-user.jpg" class="user-info__image"
+                            alt="Foto de perfil del usuario">
+                        <!--  aqui la sombra  -->
+                    </div>
+
+                    <h2 class="user-info__name"> Victor Robles </h2>
+                    <h4 class="user-info__job"> Desarrollador web </h4>
+
+                </div>
+
+                <!--  **********  Menu de Navegacion  **********  -->
+                <nav class="layout__menu">
+
+                    <ul class="menu__list">
+
+                        <!--  Home  -->
+                        <li class="menu__option">
+                            <a href="#" id="home" class="menu__link menu__link--active">
+                                <i class="menu__icon fa-solid fa-house"> </i>
+                                <span class="menu__overlay"> Home </span>
+                            </a>
+                        </li>
+
+                        <!--  Sobre Mi  -->
+                        <li class="menu__option">
+                            <a href="#" id="sobreMi" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"> </i>
+                                <span class="menu__overlay"> Sobre mi </span>
+                            </a>
+                        </li>
+
+                        <!--  Estudios  -->
+                        <li class="menu__option">
+                            <a href="#" id="curriculum" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"> </i>
+                                <span class="menu__overlay"> Curriculum </span>
+                            </a>
+                        </li>
+
+                        <!--  Portafolio  -->
+                        <li class="menu__option">
+                            <a href="#" id="portafolio" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"> </i>
+                                <span class="menu__overlay"> Portafolio </span>
+                            </a>
+                        </li>
+
+                        <!--  Blog  -->
+                        <li class="menu__option">
+                            <a href="#" id="blog" class="menu__link">
+                                <i class="menu__icon fa-solid fa-book"> </i>
+                                <span class="menu__overlay"> Blog </span>
+                            </a>
+                        </li>
+
+                        <!--  Contacto  -->
+                        <li class="menu__option">
+                            <a href="#" id="contacto" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"> </i>
+                                <span class="menu__overlay"> Contacto </span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <!--  **********  Links a Redes Sociales  **********  -->
+                <div class="user-info__links">
+
+                    <ul class="links__social">
+
+                        <!--  Youtube  -->
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-youtube"> </i>
+                            </a>
+                        </li>
+
+                        <!--  Linkedin  -->
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-linkedin"> </i>
+                            </a>
+                        </li>
+
+                        <!--  Instagram  -->
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-instagram"> </i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!--  Boton del Curriculum  -->
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn"> Descargar CV </a>
+                </div>
+
+                <!--  Pie de Pagina  -->
+                <footer class="user-info__footer">
+                    &copy 2024 Victor Robles Web
+                </footer>
+
+            </section>
+
+        </aside>
+
+        <!--  **********  Menu Responsive - Hamburguesa  **********  -->
+        <div class="layout__menu-toggle">
+            <i class="menu__toggle__icon fa-solid fa-bars"> </i>
+            <i class="menu__toggle__icon fa-solid fa-xmark"> </i>
+        </div>
+
+
+        <!--  ***********************************************************  -->
+        <!--  **********  Renderizado del HTML de cada Página  **********  -->
+        <!--  ***********************************************************  -->
+        <main id="layoutContent" class="layout__content">
+
+        </main>
+
+
+    </div>
+
+    <script src="./assets/js/menu.js" defer> </script>
+    
+</body>
+
+</html>

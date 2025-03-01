@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Agencia Desarrollo Web | Master CSS Avanzado - Victor Robles Web </title>
+
+    <!--  **********  Importacion del Favicon  **********  -->
+    <link rel="shortcut icon" href="./assets/favicon/css3-favicon.ico" type="image/x-icon">
+
+    <!--  **********  Importacion de Fuentes  **********  -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css">
+
+    <!--  **********  Importacion de Hojas de Estilos  **********  -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="./assets/css/dark.css"> -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+
+    <!--  **********  Importacion Archivos JS  **********  -->
+    <script src="assets/js/menu-mobile.js"> </script>
+    <script src="assets/js/navbar-fixed.js"> </script>
+    <script src="assets/js/dark.js"> </script>
+
+</head>
+
+
+<body>
+
+    <!--  *****************************************  -->
+    <!--  **********  BOTÓN MODO OSCURO  **********  -->
+    <!--  *****************************************  -->
+    <div class="switcher">
+
+        <!--  ----------  Botón del Modo Oscuro  ----------  -->
+        <button class="switcher__btn">
+
+            <!--  -----  Icono der la Luna  -->
+            <span class="switcher__icon-light">
+                <i class="fa-solid fa-moon switcher__icon"> </i>
+            </span>
+            
+            <!--  -----  Icono de la Bombilla  -->
+            <span class="switcher__icon-dark">
+                <i class="fa-solid fa-lightbulb switcher__icon"> </i>
+            </span>
+
+        </button>
+
+    </div>
+
+
+
+    <!--  **************************************************  -->
+    <!--  **********  MENU NAVEGACIÓN RESPONSIVE  **********  -->
+    <!--  **************************************************  -->
+    <div class="menu-mobile">
+
+        <!--  **********  Header del Menu  **********  -->
+        <header class="menu-mobile__header">
+
+            <!--  *****  Contenedor del Logo  *****  -->
+            <div class="menu-mobile__container-logo">
+
+                <!--  -----  Logo  -----  -->
+                <a href="#" class="menu-mobile__link-logo">
+                    <img class="menu-mobile__logo" src="assets/img/logo1.png" alt="logo del sitio web">
+                </a>
+            </div>
+
+            <!--  *****  Botón de Cerrar el Menu  *****  -->
+            <button class="menu-mobile__close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"> </i>
+            </button>
+
+        </header>
+
+
+        <!--  **********  Menu de Navegación  **********  -->
+        <div class="menu-mobile__body">
+
+            <!--  *****  Nav del Menu de Navegación  *****  -->
+            <nav class="menu-mobile__nav">
+
+                <!--  -----  Lista de Navegación  ------->
+                <ul class="menu-mobile__list">
+
+                    <!--  -----  1ª. Elemento li 'Inicio'  -----  -->
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link"> Inicio </a>
+                    </li>
+
+                    <!--  -----  2º. Elemento li 'Servicios'  -----  -->
+                    <li class="menu-mobile__item">
+
+                        <a href="#" class="menu-mobile__link">
+                            Servicios
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"> </i>
+                        </a>
+
+                        <!--  -----  Submenu  ------->
+                        <ul class="menu-mobile__submenu-mobile">
+
+                            <!--  1º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Diseño Web
+                                </a>
+                            </li>
+
+                            <!--  2º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Desarrollo Web
+                                </a>
+                            </li>
+
+                            <!--  3º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Desarrollo de Apps
+                                </a>
+                            </li>
+
+                            <!--  4º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Programación
+                                </a>
+                            </li>
+
+                            <!--  5º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Consultoría
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!--  -----  3º. Elemento li 'Portafolio'  -----  -->
+                    <li class="menu-mobile__item">
+
+                        <a href="#" class="menu-mobile__link">
+                            Portafolio
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"> </i>
+                        </a>
+
+                        <!--  -----  Submenu  ------->
+                        <ul class="menu-mobile__submenu-mobile">
+
+                            <!--  1º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Diseño Web
+                                </a>
+                            </li>
+
+                            <!--  2º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Desarrollo Web
+                                </a>
+                            </li>
+
+                            <!--  3º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Desarrollo de Apps
+                                </a>
+                            </li>
+
+                            <!--  4º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Programación
+                                </a>
+                            </li>
+
+                            <!--  5º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Consultoría
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <!--  -----  4º. Elemento li 'Blog'  -----  -->
+                    <li class="menu-mobile__item">
+
+                        <a href="#" class="menu-mobile__link">
+                            Blog
+                            <i class="fa-solid fa-chevron-down menu-mobile__icon"> </i>
+                        </a>
+
+                        <!--  -----  Submenu  ------->
+                        <ul class="menu-mobile__submenu-mobile">
+
+                            <!--  1º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Diseño Web
+                                </a>
+                            </li>
+
+                            <!--  2º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Desarrollo Web
+                                </a>
+                            </li>
+
+                            <!--  3º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Desarrollo de Apps
+                                </a>
+                            </li>
+
+                            <!--  4º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Programación
+                                </a>
+                            </li>
+
+                            <!--  5º li del Submenu  -->
+                            <li class="submenu-mobile__item">
+                                <a href="#" class="submenu-mobile__link">
+                                    Consultoría
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!--  -----  5º. Elemento li 'Equipo'  -----  -->
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link"> Equipo </a>
+                    </li>
+
+
+                    <!--  -----  6º. Elemento li 'Contacto'  -----  -->
+                    <li class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link"> Contacto </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <!--  ****************************************  -->
+    <!--  **********  LAYOUT PRINCIPAL  **********  -->
+    <!--  ****************************************  -->
+    <div class="layout">
+
+
+        <!--  ****************************  -->
+        <!--  **********  MENU  **********  -->
+        <!--  ****************************  -->
+        <section class="layout__menu">
+
+
+            <!--  *****  BARRA DEL MENU - HEADER  *****-->
+            <header class="menu__navbar">
+
+                <!--  *****  LOGO  *****  -->
+                <div class="navbar__logo">
+
+                    <a href="#" class="navbar__link-logo">
+                        <img src="./assets/img/logo1.png" class="navbar__logo-light">
+                    </a>
+
+                </div>
+
+
+                <!--  *****  BOTON DEL MENU RESPONSIVE  *****-->
+                <div class="navbar__mobile-btn">
+                    <button class="mobile-btn__wrap">
+                        <span class="mobile-btn__line"> </span>
+                        <span class="mobile-btn__line"> </span>
+                        <span class="mobile-btn__line"> </span>
+                    </button>
+                </div>
+
+
+
+                <!--  *****  MENU DE NAVEGACIÓN  *****  -->
+                <nav class="navbar__nav">
+
+                    <!--  -----  Lista de Navegación  ------->
+                    <ul class="nav__list">
+
+                        <!--  -----  1ª. Elemento li 'Inicio'  -----  -->
+                        <li class="nav__item">
+                            <a href="#" class="nav__title"> Inicio </a>
+                        </li>
+
+                        <!--  -----  2º. Elemento li 'Servicios'  -----  -->
+                        <li class="nav__item">
+
+                            <a href="#" class="nav__title">
+                                Servicios
+                                <i class="fa-solid fa-chevron-down nav__icon"> </i>
+                            </a>
+
+                            <!--  -----  Submenu  ------->
+                            <ul class="nav__submenu">
+
+                                <!--  1º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Diseño Web
+                                    </a>
+                                </li>
+
+                                <!--  2º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Desarrollo Web
+                                    </a>
+                                </li>
+
+                                <!--  3º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Desarrollo de Apps
+                                    </a>
+                                </li>
+
+                                <!--  4º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Programación
+                                    </a>
+                                </li>
+
+                                <!--  5º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Consultoría
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!--  -----  3º. Elemento li 'Portafolio'  -----  -->
+                        <li class="nav__item">
+
+                            <a href="#" class="nav__title">
+                                Portafolio
+                                <i class="fa-solid fa-chevron-down nav__icon"> </i>
+                            </a>
+
+                            <!--  -----  Submenu  ------->
+                            <ul class="nav__submenu">
+
+                                <!--  1º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Diseño Web
+                                    </a>
+                                </li>
+
+                                <!--  2º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Desarrollo Web
+                                    </a>
+                                </li>
+
+                                <!--  3º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Desarrollo de Apps
+                                    </a>
+                                </li>
+
+                                <!--  4º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Programación
+                                    </a>
+                                </li>
+
+                                <!--  5º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Consultoría
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                        <!--  -----  4º. Elemento li 'Blog'  -----  -->
+                        <li class="nav__item">
+
+                            <a href="#" class="nav__title">
+                                Blog
+                                <i class="fa-solid fa-chevron-down nav__icon"> </i>
+                            </a>
+
+                            <!--  -----  Submenu  ------->
+                            <ul class="nav__submenu">
+
+                                <!--  1º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Diseño Web
+                                    </a>
+                                </li>
+
+                                <!--  2º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Desarrollo Web
+                                    </a>
+                                </li>
+
+                                <!--  3º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Desarrollo de Apps
+                                    </a>
+                                </li>
+
+                                <!--  4º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Programación
+                                    </a>
+                                </li>
+
+                                <!--  5º li del Submenu  -->
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__title">
+                                        Consultoría
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!--  -----  5º. Elemento li 'Equipo'  -----  -->
+                        <li class="nav__item">
+                            <a href="#" class="nav__title"> Equipo </a>
+                        </li>
+
+
+                        <!--  -----  6º. Elemento li 'Contacto'  -----  -->
+                        <li class="nav__item">
+                            <a href="#" class="nav__title"> Contacto </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </header>
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
+
+
+        <!--  ******************************  -->
+        <!--  **********  BANNER  **********  -->
+        <!--  ******************************  -->
+        <section class="layout__banner">
+
+            <!--  **********  Contenido del 'Banner'  **********  -->
+            <header class="banner__content">
+
+                <!--  *****  Titulo  *****  -->
+                <h1 class="banner__title"> Diseño & <br> Desarrollo web </h1>
+
+                <!--  *****  Botón  *****  -->
+                <a href="#" class="banner__btn"> Ver trabajos </a>
+
+            </header>
+
+            <!--  *****  Formas e Imagenes del Banner. Elementos Dinámicos  *****  -->
+            <div class="banner__shapes">
+
+                <ul class="shapes__list">
+
+                    <!--  -----  Forma 1  -----  -->
+                    <li class="shapes__item shapes__item--shape1">
+                        <div class="shapes__container">
+                            <img class="shapes__img" src="assets/img/banner-shape-1.png">
+                        </div>
+                    </li>
+
+                    <!--  -----  Forma 2  -----  -->
+                    <li class="shapes__item shapes__item--shape2">
+                        <div class="shapes__container">
+                            <img class="shapes__img" src="assets/img/banner-shape-2.png">
+                        </div>
+                    </li>
+
+                    <!--  -----  Forma 3  -----  -->
+                    <li class="shapes__item shapes__item--shape3">
+                        <div class="shapes__container">
+                            <img class="shapes__img" src="assets/img/bubble-16.png">
+                        </div>
+                    </li>
+
+                    <!--  -----  Forma 4  -----  -->
+                    <li class="shapes__item shapes__item--shape4">
+                        <div class="shapes__container">
+                            <img class="shapes__img" src="assets/img/bubble-15.png">
+                        </div>
+                    </li>
+
+                    <!--  -----  Forma 5  -----  -->
+                    <li class="shapes__item shapes__item--shape5">
+                        <div class="shapes__container">
+                            <img class="shapes__img" src="assets/img/bubble-14.png">
+                        </div>
+                    </li>
+
+                    <!--  -----  Forma 6  -----  -->
+                    <li class="shapes__item shapes__item--shape6">
+                        <div class="shapes__container">
+                            <img class="shapes__img" src="assets/img/bubble-16.png">
+                        </div>
+                    </li>
+
+                    <!--  -----  Forma 7  -----  -->
+                    <li class="shapes__item shapes__item--shape7">
+                        <div class="shapes__container">
+                            <img class="shapes__img" src="assets/img/bubble-26.png">
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
+
+
+        <!--  *********************************  -->
+        <!--  **********  SERVICIOS  **********  -->
+        <!--  *********************************  -->
+        <section class="layout__services">
+
+            <!--  **********  Grid de los Servicios  **********  -->
+            <div class="services__grid">
+
+                <!--  **********  Encabezado de Servicios  **********  -->
+                <header class="services__header">
+                    <p class="services__subtitle"> ¿Que podemos hacer por tí? </p>
+                    <h2 class="services__title"> Servicios que te <br> pueden ayudar </h2>
+                </header>
+
+                <!--  *****  Articulos de los Servicios  *****  -->
+                <div class="services__list">
+
+                    <!--  -----  Articulo 1  -----  -->
+                    <article class="services__service services__service--bottom">
+                        <!--  Contenedor Imagen  -->
+                        <div class="service__container-img">
+                            <!--  Imagen del Servicio  -->
+                            <img class="service__img" src="assets/img/icon-1.png" alt="Diseño">
+                        </div>
+                        <!--  Contenedor Contenido del Servicio-->
+                        <div class="service__content">
+                            <h3 class="service__title">
+                                <a href="#" class="service__link"> Diseño </a>
+                            </h3>
+                            <p class="service__description">
+                                Desde una web, pasando por una app, hasta un logotipo...
+                            </p>
+                            <a href="#" class="service__more"> Leer más </a>
+                        </div>
+                    </article>
+
+
+                    <!--  -----  Articulo 2  -----  -->
+                    <article class="services__service services__service--middle">
+                        <!--  Contenedor Imagen  -->
+                        <div class="service__container-img">
+                            <!--  Imagen del Servicio  -->
+                            <img class="service__img" src="assets/img/icon-2.png" alt="Diseño">
+                        </div>
+                        <!--  Contenedor Contenido del Servicio  -->
+                        <div class="service__content">
+                            <h3 class="service__title">
+                                <a href="#" class="service__link"> Desarrollo </a>
+                            </h3>
+                            <p class="service__description">
+                                Las aplicaciones web y moviles que imaginas a medida...
+                            </p>
+                            <a href="#" class="service__more"> Leer más </a>
+                        </div>
+                    </article>
+
+
+                    <!--  -----  Articulo 3  -----  -->
+                    <article class="services__service services__service--top">
+                        <!--  Contenedor Imagen  -->
+                        <div class="service__container-img">
+                            <!--  Imagen del Servicio  -->
+                            <img class="service__img" src="assets/img/icon-3.png" alt="Diseño">
+                        </div>
+                        <!--  Contenedor Contenido del Servicio  -->
+                        <div class="service__content">
+                            <h3 class="service__title">
+                                <a href="#" class="service__link"> Marketing online </a>
+                            </h3>
+                            <p class="service__description">
+                                Le damos visibilidad a tu proyecto digital...
+                            </p>
+                            <a href="#" class="service__more"> Leer más </a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!--  **********  Grid de los Shapes de Servicios  **********  -->
+            <ul class="services__service-shapes">
+
+                <!--  *****  Shape 1  *****  -->
+                <li class="services-shapes__item services-shapes--shape1">
+                    <div class="service-shapes__container">
+                        <img class="service-shapes__img" src="assets/img/circle-2.png">
+                    </div>
+                </li>
+
+                <!--  *****  Shape 2  *****  -->
+                <li class="services-shapes__item services-shapes--shape2">
+                    <div class="service-shapes__container">
+                        <img class="service-shapes__img" src="assets/img/bubble-2.png">
+                    </div>
+                </li>
+
+                <!--  *****  Shape 3  *****  -->
+                <li class="services-shapes__item services-shapes--shape3">
+                    <div class="service-shapes__container">
+                        <img class="service-shapes__img" src="assets/img/bubble-1.png">
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
+
+
+        <!--  *********************************  -->
+        <!--  **********  PROYECTOS  **********  -->
+        <!--  *********************************  -->
+        <section class="layout__projets">
+
+            <!--  **********  Grid de Proyectos  **********  -->
+            <div class="projects__grid">
+
+                <!--  *****  Header de Proyecto  *****  s-->
+                <header class="projects__header">
+
+                    <p class="projects__subtitle"> Nuestros proyectos </p>
+                    <h2 class="projects__title"> Algunos de nuestros <br> mejores trabajos. </h2>
+
+                </header>
+
+                <!--  *****  Menú de categorias de proyectos.-->
+                <ul class="projects__categories">
+
+                    <!--  -----  1ª Categoria  -----  -->
+                    <li class="categories__item categories__item--active">
+                        Todos los trabajos
+                    </li>
+
+                    <!--  -----  2ª Categoria  -----  -->
+                    <li class="categories__item">
+                        Desarrollo Web
+                    </li>
+
+                    <!--  -----  3ª Categoria  -----  -->
+                    <li class="categories__item">
+                        Diseño web
+                    </li>
+
+                    <!--  -----  4ª Categoria  -----  -->
+                    <li class="categories__item">
+                        Desarrollo Movil
+                    </li>
+
+                </ul>
+
+                <!--  *****  Todos los Proyectos  *****  -->
+                <div class="projects__all">
+
+
+                    <!--  -----  1º Proyecto  -----  -->
+                    <article class="projects__project">
+
+                        <!--  -----  Contenedor Imagen  -----  -->
+                        <div class="project__container-img">
+
+                            <a href="#" class="project__link-img">
+                                <img src="./assets/img/project-1.jpg" class="project__img" alt="Imagen de un Proyecto">
+                            </a>
+
+                        </div>
+
+                        <!--  -----  Contenido de Proyectos  ------->
+                        <div class="project__content">
+
+                            <h3 class="project__title">
+                                <a href="#" class="project__link-title"> Agencia Creativa </a>
+                            </h3>
+
+                            <div class="project__tags">
+                                <span class="project__tag"> Marca </span>
+                                <span class="project__tag"> Web </span>
+                                <span class="project__tag"> Aplicación </span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!--  -----  2º Proyecto  -----  -->
+                    <article class="projects__project">
+
+                        <!--  -----  Contenedor Imagen  -----  -->
+                        <div class="project__container-img">
+                            <a href="#" class="project__link-img">
+                                <img src="./assets/img/project-2.jpg" class="project__img" alt="Imagen de un Proyecto">
+                            </a>
+                        </div>
+
+                        <!--  -----  Contenido de Proyectos  ------->
+                        <div class="project__content">
+
+                            <h3 class="project__title">
+                                <a href="#" class="project__link-title"> Gestion de tareas </a>
+                            </h3>
+
+                            <div class="project__tags">
+                                <span class="project__tag"> Marca </span>
+                                <span class="project__tag"> Web </span>
+                                <span class="project__tag"> Movil </span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!--  -----  3º Proyecto  -----  -->
+                    <article class="projects__project">
+
+                        <!--  -----  Contenedor Imagen  -----  -->
+                        <div class="project__container-img">
+
+                            <a href="#" class="project__link-img">
+                                <img src="./assets/img/project-3.jpg" class="project__img" alt="Imagen de un Proyecto">
+                            </a>
+
+                        </div>
+
+                        <!--  -----  Contenido de Proyectos  ------->
+                        <div class="project__content">
+
+                            <h3 class="project__title">
+                                <a href="#" class="project__link-title"> Red social </a>
+                            </h3>
+
+                            <div class="project__tags">
+                                <span class="project__tag"> Diseño </span>
+                                <span class="project__tag"> Desarrollo </span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!--  -----  4º Proyecto  -----  -->
+                    <article class="projects__project">
+
+                        <!--  -----  Contenedor Imagen  -----  -->
+                        <div class="project__container-img">
+
+                            <a href="#" class="project__link-img">
+                                <img src="./assets/img/project-4.jpg" class="project__img" alt="Imagen de un Proyecto">
+                            </a>
+
+                        </div>
+
+                        <!--  -----  Contenido de Proyectos  ------->
+                        <div class="project__content">
+
+                            <h3 class="project__title">
+                                <a href="#" class="project__link-title"> Agencia Digital </a>
+                            </h3>
+
+                            <div class="project__tags">
+                                <span class="project__tag"> Web </span>
+                                <span class="project__tag"> UI/UX </span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!--  -----  5º Proyecto  -----  -->
+                    <article class="projects__project">
+
+                        <!--  -----  Contenedor Imagen  -----  -->
+                        <div class="project__container-img">
+
+                            <a href="#" class="project__link-img">
+                                <img src="./assets/img/project-5.jpg" class="project__img" alt="Imagen de un Proyecto">
+                            </a>
+
+                        </div>
+
+                        <!--  -----  Contenido de Proyectos  ------->
+                        <div class="project__content">
+
+                            <h3 class="project__title">
+                                <a href="#" class="project__link-title"> Portafolio Personal </a>
+                            </h3>
+
+                            <div class="project__tags">
+                                <span class="project__tag"> Logo </span>
+                                <span class="project__tag"> Web </span>
+                                <span class="project__tag"> Movil </span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!--  -----  6º Proyecto  -----  -->
+                    <article class="projects__project">
+
+                        <!--  -----  Contenedor Imagen  -----  -->
+                        <div class="project__container-img">
+                            <a href="#" class="project__link-img">
+                                <img src="./assets/img/project-6.jpg" class="project__img" alt="Imagen de un Proyecto">
+                            </a>
+                        </div>
+
+                        <!--  -----  Contenido de Proyectos  ------->
+                        <div class="project__content">
+
+                            <h3 class="project__title">
+                                <a href="#" class="project__link-title"> Aplicación Web </a>
+                            </h3>
+
+                            <div class="project__tags">
+                                <span class="project__tag"> Logo </span>
+                                <span class="project__tag"> Web </span>
+                                <span class="project__tag"> Aplicación </span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!--  **********  Grid de los Shapes de Proyectos  **********  -->
+            <ul class="projects__project-shapes">
+                <!--  *****  Shape 1  *****  -->
+                <li class="projects-shapes__item project-shapes--shape1">
+                    <div class="project-shapes__container">
+                        <img class="project-shapes__img" src="assets/img/circle-2.png">
+                    </div>
+                </li>
+                <!--  *****  Shape 2  *****  -->
+                <li class="projects-shapes__item project-shapes--shape2">
+                    <div class="project-shapes__container">
+                        <img class="project-shapes__img" src="assets/img/bubble-2.png">
+                    </div>
+                </li>
+                <!--  *****  Shape 3  *****  -->
+                <li class="projects-shapes__item project-shapes--shape3">
+                    <div class="project-shapes__container">
+                        <img class="project-shapes__img" src="assets/img/bubble-1.png">
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
+
+
+        <!--  ************************************  -->
+        <!--  **********  ESTADISTICAS  **********  -->
+        <!--  ************************************  -->
+        <section class="layout__stats">
+
+            <!--  **********  Contenedor de Estadisticas  **********  -->
+            <div class="stats__container">
+
+                <!--  **********  Encabezado de Estadisticas  **********  -->
+                <header class="stats__header">
+
+                    <h4 class="stats__subtitle"> Agencia de diseño y desarrollo </h4>
+                    <h2 class="stats__title"> Estadisticas de trabajos realizados </h2>
+                    <p class="stats__description"> Aqui puedes ver un resumen de nuestras estadisticas en estos años de
+                        trabajo. </p>
+
+                </header>
+
+
+                <!--  *****  Contenido de Estadisticas  *****  -->
+                <div class="stats__progress">
+
+                    <!--  -----  Estadistica 1  -----  -->
+                    <article class="stats__stat">
+
+                        <!--  Icono 1  -->
+                        <div class="stat__icon">
+
+                            <img src="./assets/img/icon-7.png">
+                            <span class="stat__count"> +15 </span>
+                            <h6 class="stat__title"> Años Activo </h6>
+
+                        </div>
+
+                    </article>
+
+
+                    <!--  -----  Estadistica 2  -----  -->
+                    <article class="stats__stat">
+
+                        <!--  Icono 1  -->
+                        <div class="stat__icon">
+
+                            <img src="./assets/img/icon-8.png">
+                            <span class="stat__count"> +200 </span>
+                            <h6 class="stat__title"> Proyectos realizados </h6>
+                        </div>
+
+                    </article>
+
+
+                    <!--  -----  Estadistica 3  -----  -->
+                    <article class="stats__stat">
+
+                        <!--  Icono 1  -->
+                        <div class="stat__icon">
+
+                            <img src="./assets/img/icon-9.png">
+                            <span class="stat__count"> +100 </span>
+                            <h6 class="stat__title"> Clientes </h6>
+
+                        </div>
+
+                    </article>
+
+
+                    <!--  -----  Estadistica 4  -----  -->
+                    <article class="stats__stat">
+
+                        <!--  Icono 1  -->
+                        <div class="stat__icon">
+
+                            <img src="./assets/img/apple.png">
+                            <span class="stat__count"> +20 </span>
+                            <h6 class="stat__title"> Profesionales </h6>
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
+
+
+        <!--  *********************************  -->
+        <!--  **********  RESEÑAS  **********  -->
+        <!--  *********************************  -->
+        <section class="layout__reviews">
+
+            <!--  **********  Grid de Reseñas  **********  -->
+            <div class="reviews__grid">
+
+                <!--  *****  Cabecera de Reseñas  *****  -->
+                <header class="reviews__header">
+
+                    <h4 class="reviews__subtitle"> Reseñas </h4>
+                    <h2 class="reviews__title"> ¿Que dicen nuestros clientes? </h2>
+                    <p class="reviews__description">
+                        Nuestros clientes siempre salen satisfechos con sus webs y apps.
+                    </p>
+
+                </header>
+
+                <!--  *****  Contenedor de reseñas  *****  -->
+                <div class="reviews__container">
+
+
+                    <!--  *****  Reseña 1  *****  -->
+                    <article class="reviews__review">
+
+                        <span class="review__company">
+                            <img class="review__img" src="./assets/img/google-2.png">
+                        </span>
+
+                        <p class="review__description">
+                            "En Google podras buscar todo, lo que necesites es importante saber manejarlo
+                            con soltura, será muy útil a la hora de buscar errores."
+                        </p>
+
+                        <div class="review__author">
+
+                            <div class="author__container-img">
+                                <img class="author__img" src="./assets/img/testimonial-2.png" alt="Foto de usuario">
+                            </div>
+
+                            <div class="author__content">
+                                <span class="author__name"> Víctor Robles </span>
+                                <span class="author__description"> Desarrollador web </span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!--  *****  Reseña 2  *****  -->
+                    <article class="reviews__review">
+
+                        <span class="review__company">
+                            <img class="review__img" src="./assets/img/udemy.png">
+                        </span>
+
+                        <p class="review__description">
+                            "Tengo muchos cursos de programación y desarrollo web para empezar desde 0
+                            o hasta convertirte en un profesional."
+                        </p>
+
+                        <div class="review__author">
+
+                            <div class="author__container-img">
+                                <img class="author__img" src="./assets/img/testimonial-2.png" alt="Foto de usuario">
+                            </div>
+
+                            <div class="author__content">
+                                <span class="author__name"> Víctor Robles </span>
+                                <span class="author__description"> Desarrollador web </span>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!--  *****  Reseña 3  *****  -->
+                    <article class="reviews__review">
+
+                        <span class="review__company">
+                            <img class="review__img" src="./assets/img/youtube.png">
+                        </span>
+
+                        <p class="review__description">
+                            "En YouTube tengo todo tipo de videos que te seran de ayuda, desde conceptos
+                            básicos, problemas del día a día, hasta cosas mas avanzadas."
+                        </p>
+
+                        <div class="review__author">
+
+                            <div class="author__container-img">
+                                <img class="author__img" src="./assets/img/testimonial-2.png" alt="Foto de usuario">
+                            </div>
+
+                            <div class="author__content">
+                                <span class="author__name"> Víctor Robles </span>
+                                <span class="author__description"> Desarrollador web </span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!--  **********  Grid de los Shapes de Reseñas  **********  -->
+            <ul class="reviews__review-shapes">
+
+                <!--  *****  Shape 1  *****  -->
+                <li class="review-shapes__item review-shapes--shape3">
+                    <div class="review-shapes__container">
+                        <img class="review-shapes__img" src="assets/img/bubble-1.png">
+                    </div>
+                </li>
+            </ul>
+
+
+        </section>
+
+
+        <!--  ********************************  -->
+        <!--  **********  CLIENTES  **********  -->
+        <!--  ********************************  -->
+        <section class="layout__clients">
+
+            <!--  **********  Contenedor de Clientes  **********  -->
+            <div class="clients__container">
+
+                <!--  *****  Cabecera de Clientes  *****  -->
+                <header class="clients__header">
+
+                    <h4 class="clients__subtitle"> Mejores clientes </h4>
+                    <h2 class="clients__title"> Hemos creado soluciones para... </h2>
+                    <p class="clients__description">
+                        Desarrollamos a medida cualquier proyecto con las mejores tecnologías.
+                    </p>
+
+                </header>
+
+                <!--  *****  Logos de Clientes  *****  -->
+                <div class="clients__logos">
+
+                    <!--  -----  Logo 1  ------->
+                    <article class="clients__item">
+                        <img class="clients__img" src="./assets/img/brand-1.png">
+                    </article>
+
+                    <!--  -----  Logo 2  ------->
+                    <article class="clients__item">
+                        <img class="clients__img" src="./assets/img/brand-1.png">
+                    </article>
+
+                    <!--  -----  Logo 3  ------->
+                    <article class="clients__item">
+                        <img class="clients__img" src="./assets/img/brand-1.png">
+                    </article>
+
+                    <!--  -----  Logo 4  ------->
+                    <article class="clients__item">
+                        <img class="clients__img" src="./assets/img/brand-1.png">
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!--  **********  Grid de los Shapes de Clientes  **********  -->
+            <ul class="clients__client-shapes">
+                <!--  *****  Shape 1  *****  -->
+                <li class="client-shapes__item client-shapes--shape3">
+                    <div class="client-shapes__container">
+                        <img class="client-shapes__img" src="assets/img/line-9.png">
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
+
+
+        <!--  ********************************  -->
+        <!--  **********  NOTICIAS  **********  -->
+        <!--  ********************************  -->
+        <section class="layout__news">
+
+            <!--  **********  Contenedor de noticias  **********  -->
+            <div class="news__container">
+
+                <!--  *****  Cabecera de Noticias  *****  -->
+                <header class="news__header">
+
+                    <h4 class="news__subtitle"> ¿Que esta pasando? </h4>
+                    <h2 class="news__title"> Ultimas Noticias </h2>
+                    <p class="news__description">
+                        Novedades sobre el desarrollo web, desarrollo movil y diseño digital
+                    </p>
+
+                </header>
+
+                <!--  *****  Lista de Noticias  *****  -->
+                <div class="news__list">
+
+                    <!--  -----  Noticia 1  -----  -->
+                    <article class="news__new">
+
+                        <!--  Contenedor Imagen  -->
+                        <div class="new__container-img">
+                            <img class="new__img" src="./assets/img/story-1.jpg" alt="Primera Noticia">
+                        </div>
+
+                        <!--  Contenido de Noticias  -->
+                        <div class="new__content">
+                            <h3 class="new__title"> <a href="#" class="new__link"> Como Maquetar una web con HTML5 y
+                                    CSS3 </a> </h3>
+                            <p class="new__description">
+                                ¿Quieres dar tus primeros pasos en el desarrollo web y a crear web espectaculares?
+                            </p>
+                            <a href="#" class="new__more">
+                                Leer más
+                                <i class="fa-solid fa-chevron-right new__icon"> </i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!--  -----  Noticia 2  -----  -->
+                    <article class="news__new">
+                        <!--  Contenedor Imagen  -->
+                        <div class="new__container-img">
+                            <img class="new__img" src="./assets/img/story-2.jpg" alt="Segunda Noticia">
+                        </div>
+                        <!--  Contenido de Noticias  -->
+                        <div class="new__content">
+                            <h3 class="new__title"> <a href="#" class="new__link"> Aprender a programar con JavaScript
+                                </a> </h3>
+                            <p class="new__description">
+                                ¿Quieres dar tus primeros pasos en la programación en el lado del cliente?
+                            </p>
+                            <a href="#" class="new__more">
+                                Leer más
+                                <i class="fa-solid fa-chevron-right new__icon"> </i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!--  **********  Grid de los Shapes de Noticias  **********  -->
+            <ul class="news__new-shapes">
+
+                <!--  *****  Shape 1  *****  -->
+                <li class="new-shapes__item new-shapes--shape1">
+                    <div class="new-shapes__container">
+                        <img class="new-shapes__img" src="assets/img/bubble-1.png">
+                    </div>
+                </li>
+
+                <!--  *****  Shape 2  *****  -->
+                <li class="new-shapes__item new-shapes--shape2">
+                    <div class="new-shapes__container">
+                        <img class="new-shapes__img" src="assets/img/line-1.png">
+                    </div>
+                </li>
+
+                <!--  *****  Shape 3  *****  -->
+                <li class="new-shapes__item new-shapes--shape3">
+                    <div class="new-shapes__container">
+                        <img class="new-shapes__img" src="assets/img/line-2.png">
+                    </div>
+                </li>
+
+                <!--  *****  Shape 4  *****  -->
+                <li class="new-shapes__item new-shapes--shape4">
+                    <div class="new-shapes__container">
+                        <img class="new-shapes__img" src="assets/img/bubble-2.png">
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
+
+
+
+        <!--  ********************************  -->
+        <!--  **********  CONTACTO  **********  -->
+        <!--  ********************************  -->
+        <section class="layout__contact">
+
+            <!--  **********  Contenedor de Contacto  **********  -->
+            <div class="contact__container">
+
+                <!--  *****  Cabecera de Contacto  *****  -->
+                <header class="contact__header">
+
+                    <h4 class="contact__subtitle"> Trabajemos juntos </h4>
+                    <h2 class="contact__title"> ¿Creamos tu nuevo proyecto? </h2>
+                    <a href="" class="contact__btn"> Pedir Presupuesto </a>
+
+                </header>
+
+                <!--  *****  Imagenes de Contacto  *****  -->
+                <div class="contact__images">
+
+                    <!--  -----  Imagen 1  -----  -->
+                    <div class="contact__thumb contact__thumb--chat">
+                        <img class="contact__img" src="./assets/img/chat-group.png">
+                    </div>
+
+                    <!--  -----  Imagen 2  -----  -->
+                    <div class="contact__thumb contact__thumb--laptop">
+                        <img class="contact__img" src="./assets/img/laptop-poses.png">
+                    </div>
+
+                    <!--  -----  Imagen 3  -----  -->
+                    <div class="contact__thumb contact__thumb--mobile">
+                        <img class="contact__img" src="./assets/img/men-mobile.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--  **********  Grid de los Shapes de Contactos  **********  -->
+            <ul class="contacts__backshapes">
+
+                <!--  *****  Shape 1  *****  -->
+                <li class="backshapes__item backshapes--shape1">
+                    <img class="backshapes__img" src="assets/img/bubble-12.png">
+                </li>
+
+                <!--  *****  Shape 2  *****  -->
+                <li class="backshapes__item backshapes--shape2">
+                    <img class="backshapes__img" src="assets/img/bubble-16.png">
+                </li>
+
+                <!--  *****  Shape 3  *****  -->
+                <li class="backshapes__item backshapes--shape3">
+                    <img class="backshapes__img" src="assets/img/bubble-13.png">
+                </li>
+
+                <!--  *****  Shape 4  *****  -->
+                <li class="backshapes__item backshapes--shape4">
+                    <img class="backshapes__img" src="assets/img/bubble-14.png">
+                </li>
+
+                <!--  *****  Shape 5  *****  -->
+                <li class="backshapes__item backshapes--shape5">
+                    <img class="backshapes__img" src="assets/img/bubble-16.png">
+                </li>
+
+                <!--  *****  Shape 6  *****  -->
+                <li class="backshapes__item backshapes--shape6">
+                    <img class="backshapes__img" src="assets/img/bubble-15.png">
+                </li>
+
+                <!--  *****  Shape 7  *****  -->
+                <li class="backshapes__item backshapes--shape7">
+                    <img class="backshapes__img" src="assets/img/bubble-16.png">
+                </li>
+
+            </ul>
+
+
+        </section>
+        <!--  ***********************************************************************************************************************  -->
+
+
+        <!--  **********************************************  -->
+        <!--  **********  FOOTER - PIE DE PÁGINA  **********  -->
+        <!--  **********************************************  -->
+        <footer class="layout__footer">
+
+            <!--  **********  Contenedor del Footer  **********  -->
+            <div class="footer__container">
+
+
+                <!--  *****  Sección Superior del Footer  *****  -->
+                <section class="footer__top">
+
+                    <!--  -----  Redes Sociales  -----  -->
+                    <ul class="footer__social">
+
+                        <!--  Facebook  -->
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-facebook-f social__img"> </i>
+                            </a>
+                        </li>
+
+                        <!--  Twitter  -->
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-twitter social__img"> </i>
+                            </a>
+                        </li>
+
+                        <!--  YouTube  -->
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-youtube social__img"> </i>
+                            </a>
+                        </li>
+
+                        <!--  Linkedin  -->
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-linkedin social__img"> </i>
+                            </a>
+                        </li>
+
+                        <!--  Instageam  -->
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-instagram social__img"> </i>
+                            </a>
+                        </li>
+
+                        <!--  Pinterest  -->
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-pinterest-p social__img"> </i>
+                            </a>
+                        </li>
+
+                        <!--  Vimeo  -->
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-vimeo-v social__img"> </i>
+                            </a>
+                        </li>
+
+                        <!--  Behaance  -->
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-behance social__img"> </i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+                <!--  *****  Sección Principal del Footer  *****  -->
+                <section class="footer__main">
+
+                    <!--  -----  Parte Izqwuierda  -----  -->
+                    <div class="footer__fleft">
+
+                        <!--  Contenedor Izquierda  -->
+                        <div class="fleft__container">
+
+                            <!--  Títulos y Subtítulos  -->
+                            <h2 class="fleft__title"> Contactanos! </h2>
+
+                            <p class="fleft__subtitle">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aliquam facere et dignissimos? Libero at ut ratione magnam.
+                            </p>
+
+                            <!--  Formulario  -->
+                            <form class="fleft__form">
+                                <div class="fleft__group">
+                                    <span class="fleft__mail-icon">
+                                        <i class="fa-solid fa-envelope-open-text fleft__img"> </i>
+                                    </span>
+                                    <input type="text" class="fleft__form-control" placeholder="Correo Electronico">
+                                    <button type="submit" class="fleft__btn"> Suscribete </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <!--  -----  Parte Derecha  -----  -->
+                    <div class="footer__fright">
+
+                        <!--  Contenedor de Listas  -->
+                        <div class="footer__widget footer__widget--50">
+
+                            <!--  Parte de Servicios  -->
+                            <h6 class="widget__title"> Servicios </h6>
+
+                            <!--  Lista 1  -->
+                            <ul class="widget__list">
+
+                                <!--  Diseño  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Diseño </a>
+                                </li>
+
+                                <!--  Desarrollo Wweb  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Desarrollo web </a>
+                                </li>
+
+                                <!--  Programación  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Programación </a>
+                                </li>
+
+                                <!--  Marketing  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Marketing </a>
+                                </li>
+
+                                <!--  Consultoria  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Consultoria </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <!--  Contenedor de Listas  -->
+                        <div class="footer__widget footer__widget--25">
+
+                            <!--  Parte de Recursos  -->
+                            <h6 class="widget__title"> Recursos </h6>
+
+                            <!--  Lista 2  -->
+                            <ul class="widget__list">
+
+                                <!--  Blog  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Blog </a>
+                                </li>
+
+                                <!--  Formación  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Formación </a>
+                                </li>
+
+                                <!--  Portafolio  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Portafolio </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <!--  Contenedor de Listas  -->
+                        <div class="footer__widget footer__widget--25">
+
+                            <!--  Parte de Soporte  -->
+                            <h6 class="widget__title"> Soporte </h6>
+
+                            <!--  Lista 3  -->
+                            <ul class="widget__list">
+
+                                <!--  Contacto  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Contacto </a>
+                                </li>
+
+                                <!--  Politica de Privacidad  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Politica de privacidad </a>
+                                </li>
+
+                                <!--  Terminos de Uso  -->
+                                <li class="widget__item">
+                                    <a href="#" class="widget__link"> Terminos de uso </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!--  *****  Sección Inferior del Footer  *****  -->
+                <section class="footer__bottom">
+
+                    <!--  -----  Contenedor CopyRight  -----  -->
+                    <div class="footer__copyright">
+                        <span class="copyright__text">
+                            &copy; 2025. Todos los derechos reservados a
+                            <a href="https:/antonydev.es/pruebas" class="copyright__link" target="_blank"> AntonyDev.
+                            </a>
+                        </span>
+                    </div>
+
+                    <!--  -----  Contenedor Enlaces  -----  -->
+                    <div class="footer__links">
+
+                        <ul class="footer__flink">
+
+                            <li class="flink__item flink__item--separator">
+                                <a href="#" class="flink__title"> Politica de Privacidad </a>
+                            </li>
+
+                            <li class="flink__item">
+                                <a href="#" class="flink__title"> Terminos de Uso </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </footer>
+
+    </div>
+    <!--  **********  Find del LAYOUT PRINCIPAL  **********************************************************************************  -->
+
+
+</body>
+
+</html>

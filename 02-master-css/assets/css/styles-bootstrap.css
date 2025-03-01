@@ -1,0 +1,66 @@
+/*  --------------------------------------------------------  */
+/*  ----------  /udemy.antonydev.tech/  --------------------  */
+/*  ----------  /master-css/  ------------------------------  */
+/*  ----------  /assets/css/styles-bootstrap.css  ----------  */
+/*  --------------------------------------------------------  */
+
+
+/*  -----  Herramientas - Bootstrap 4  -----  */
+
+.herramientas-bootstrap__title {
+    font-size: 24px;
+}
+
+.herramientas-bootstrap__subtitle {
+    text-align: center;
+}
+
+/*  -----  Componentes - Bootstrap 4  -----  */
+#menu {
+    height: 50px;
+}
+
+#menu ul {
+    text-decoration: none;
+    list-style: none;
+    line-height: 50px;
+}
+
+section h2 {
+    color: black;
+}
+.item {
+    height: 150px;
+}
+
+.footer-bootstrap {
+    height: 50px;
+    line-height: 50px;
+}
+
+.lateral {
+    height: 250px;
+}
+
+.lateral > div {
+    /*height: 50px;*/
+    height: calc(250px / 3);
+}
+
+
+/*  -----  responsive  -----  */
+
+@media (max-width: 768px) {
+    #menu {
+        height: auto;
+    }
+}
+
+#slider {
+    height: 800px;
+    overflow: hidden;
+}
+
+.carousel-img {
+    height: 800px;
+}

@@ -1,0 +1,4 @@
+# Ignorar todos los archivos de audio .mp3 y .mp4
+*.mp3
+*.mp4
+

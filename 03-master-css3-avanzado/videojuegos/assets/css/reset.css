@@ -1,0 +1,65 @@
+/*  ******************************************************************  */
+/*  **********  /14-maquetacion-web-3/assets/css/reset.css  **********  */
+/*  ******************************************************************  */
+
+
+:root {
+    --color-principal:#fff;
+    /* --color--secondary:#329153;
+    --color-bg-navbar: #333946;
+    --color-border-list: rgba(255, 255, 255, 0.3); */
+
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    /* color: var(--color-principal); */
+}
+
+p a {
+    display: inline;
+}
+
+img, video, iframe, picture, figure {
+    max-width: 100%;
+    display: block;
+}
+
+form, input, select, textarea, button, label {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}

@@ -1,0 +1,193 @@
+<<<<<<< HEAD:master-css3-avanzado/assets/css/aprendiendo-css.css
+/*  -------------------------------------------------------  */
+/*  ----------  /udemy.antonydev.tech/  -------------------  */
+/*  ----------  /master-css3-avanzado/  -------------------  */
+/*  ----------  /assets/css/aprendiendo-css.css  ----------  */
+/*  -------------------------------------------------------  */
+
+
+/*  -----  aprendiendo-css  -----  */
+
+#container {
+   /* width: 70%;*/
+   width: 1100px;
+   margin: 0 auto;
+   border: 1px solid black;
+   background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+   /*height: 800px;*/
+}
+
+.css__header {
+    background: red;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    border-bottom: 3px dashed black;
+}
+
+.css__header-title {
+    font-size: 24px;
+}
+
+.css_nav {
+    background: lightblue;
+    height: 50px;
+    line-height: 30px;
+    border-bottom: 1px solid black;
+}
+
+.css_nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+.css_nav ul li a  {
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#css__content {
+    float: left;
+    width: calc(80% - 80px);
+    background: green;
+    min-height: 400px;
+    padding: 40px;
+}
+
+.css__article {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.css__article:first-child {
+    padding-top: 10px;
+    border-top: 1px solid #eee;;
+}
+
+.css__article h2 {
+    font-size: 25px;
+}
+
+.css__aside {
+    float: left;
+    width: calc(20% - 20px);
+    background: orange;
+    min-height: 400px;
+    padding: 10px;
+}
+
+.css__footer {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+=======
+/*  -------------------------------------------------------  */
+/*  ----------  /udemy.antonydev.tech/  -------------------  */
+/*  ----------  /master-css3-avanzado/  -------------------  */
+/*  ----------  /assets/css/aprendiendo-css.css  ----------  */
+/*  -------------------------------------------------------  */
+
+
+/*  -----  aprendiendo-css  -----  */
+
+#container {
+   /* width: 70%;*/
+   width: 1100px;
+   margin: 0 auto;
+   border: 1px solid black;
+   background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+   /*height: 800px;*/
+}
+
+.css__header {
+    background: red;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    border-bottom: 3px dashed black;
+}
+
+.css__header-title {
+    font-size: 24px;
+}
+
+.css_nav {
+    background: lightblue;
+    height: 50px;
+    line-height: 30px;
+    border-bottom: 1px solid black;
+}
+
+.css_nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+.css_nav ul li a  {
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#css__content {
+    float: left;
+    width: calc(80% - 80px);
+    background: green;
+    min-height: 400px;
+    padding: 40px;
+}
+
+.css__article {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.css__article:first-child {
+    padding-top: 10px;
+    border-top: 1px solid #eee;;
+}
+
+.css__article h2 {
+    font-size: 25px;
+}
+
+.css__aside {
+    float: left;
+    width: calc(20% - 20px);
+    background: orange;
+    min-height: 400px;
+    padding: 10px;
+}
+
+.css__footer {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+>>>>>>> 3a719d6fc28906b21d6ac7f73b39114c6d33fce2:03-master-css3-avanzado/assets/css/aprendiendo-css.css

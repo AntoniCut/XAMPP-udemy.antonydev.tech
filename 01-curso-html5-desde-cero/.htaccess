@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /udemy.antonydev.tech/curso-html5-desde-cero/
+
+    # Si el archivo o directorio existe, usa ese recurso
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # De lo contrario, redirige a index.html
+    RewriteRule ^ index.html [L]
+</IfModule>

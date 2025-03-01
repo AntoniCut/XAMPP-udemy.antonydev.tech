@@ -1,0 +1,29 @@
+/*  ----------------------------------------------  */
+/*  ----------  /udemy.antonydev.tech/  ----------  */
+/*  ----------  /master-css/  --------------------  */
+/*  ----------  /assets/css/fuentes.css  ---------  */
+/*  ----------------------------------------------  */
+
+
+/*  -----  Fuentes  -----  */
+
+.fuentes__title {
+    font-size: 24px;
+}
+
+@font-face{
+    font-family: Mansalva;
+    src: url(udemy.antonydev.tech/master-css/assets/fonts/mansalva/Mansalva-Regular.ttf);
+}
+
+
+.fuentes__subtitle {
+    font-family: Mansalva, "comic Sans MS";
+    font-size: 35px;
+}
+
+.fuentes__parrafo {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}

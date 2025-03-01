@@ -1,0 +1,442 @@
+/*  ***********************************************************************  */
+/*  **********  /14-maquetacion-web-3/assets/css/responsive.css  **********  */
+/*  ***********************************************************************  */
+
+
+/*  ****************************************  */
+/*  *****  BOTÓN MOBILE - HAMBURGUESA  *****  */
+/*  ****************************************  */
+
+.navbar__mobile-btn {
+    display: none;
+}
+
+
+
+/*  *****************************  */
+/*  *****  MENU RESPONSIVE  *****  */
+/*  *****************************  */
+
+.navbar__mobile-list {
+    display: none;
+}
+
+.navbar__mobile-list a {
+    color: var(--color-principal);
+}
+
+
+
+/*  ***************************  */
+/*  *****  MEDIA QUERIES  *****  */
+/*  ***************************  */
+
+
+/*  *****  Menor a 1024px  --  Tablet  *****  */
+@media (max-width: 1024px) {
+
+
+    /*  -----  Layout  -----  */
+    .layout {
+        width: 70%;
+        min-width: 74rem;
+        margin: 0 auto;
+        grid-template-areas:
+            "header    header"
+            "nav       nav"
+            "marquee   marquee"
+            "slider    slider"
+            "high      high"
+            "videos    videos"
+            "carousel  carousel"
+            "main      main"
+            "aside     aside"
+        ;
+    }
+
+    .layout__main {
+        margin-right: 0;
+    }
+
+
+    /*  -----  Cabecera  -----  */
+    .layout__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    /*  -----  Menú Escritorio  -----  */
+    .navbar__list {
+        display: none;
+    }
+
+
+    /*  -----  Botón Hamburguesa  -----  */
+    .navbar__mobile-btn {
+        display: flex;
+    }
+
+
+    /*  -----  Menú Movil  -----  */
+
+    .navbar__mobile-list {
+        /* display: block; */
+        display: none;
+        position: absolute;
+        padding: 1.5rem;
+        top: 98%;
+        width: 100%;
+        background-color: var(--color-bg-navbar);
+        z-index: 99;
+    }
+
+    .mobile-list__item {
+        width: 100%;
+        padding: 0.5rem 2rem;
+        border-bottom: 1px solid var(--color-border-list);
+    }
+
+    .mobile-list__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-list__link {
+        display: block;
+        width: 85%;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 3rem;
+        text-transform: uppercase;
+        color: var(--color-principal);
+    }
+
+    .mobile-list__icon {
+        cursor: pointer;
+    }
+
+    .mobile-list__icon .fa-solid {
+        color: var(--color--secondary);
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+
+    /*  -----  Submenú Movil  -----  */
+
+    .mobile-list__msubmenu {
+        /* display: block; */
+        display: none;
+    }
+
+    .msubmenu__item {
+        padding-left: 4rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .msubmenu__link {
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 3rem;
+        color: var(--color-principal);
+        text-transform: uppercase;
+    }
+
+
+    /*  -----  Slider  -----  */
+
+    .layout__slider {
+        grid-template-areas:
+            "slider1 slider3 slider3 slider3"
+            "slider2 slider3 slider3 slider3"
+            "slider4 slider4 slider5 slider5"
+        ;
+    }
+
+    .slider__container--slider2 {
+        width: 100%;
+        height: 16.8rem;
+    }
+
+    .slider__container--slider3 {
+        width: 100%;
+        height: 33.8rem;
+    }
+
+    .slider__container--slider5 {
+        width: 100%;
+        height: 23.6rem;
+    }
+
+
+    /*  -----  Mejores Momentos  -----  */
+
+    .highlights__posts {
+        flex-wrap: wrap;
+    }
+
+    .highlights__post {
+        flex-basis: calc(50% - 1.5rem);
+    }
+
+
+    /*  -----  Videos  -----  */
+
+    .videos__container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .videos__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .videos__video {
+        width: calc(50% - 1rem);
+    }
+
+
+    /*  -----  carousel juegos  -----  */
+
+    .carousel-games__item {
+        width: 100%;
+    }
+
+    .carousel-games__item--hiden {
+        display: none;
+    }
+
+
+    /*  -----  Barra Lateras  --  Aside  -----  */
+
+    .layout__aside {
+        margin-bottom: 3rem;
+    }
+
+
+    /*  -----  Footer  -----  */
+
+    .footer__container {
+        width: 70%;
+        min-width: 70rem;
+        flex-direction: column;
+    }
+
+    .footer__left-container,
+    .footer__center-container,
+    .footer__right-container {
+        width: 100%;
+    }
+
+    .footer__fslider {
+        width: auto;
+        height: auto;
+    }
+
+    .footer__text {
+        text-align: center;
+        margin: 0;
+    }
+
+}
+
+
+
+/*  *****  Menor a 775px  --  Smartphone Grandes *****  */
+@media (max-width: 775px) {
+
+
+    /*  -----  Layout  -----  */
+
+    .layout {
+        width: 57%;
+        min-width: 57rem;
+        margin: 0 auto;
+    }
+
+    /*  -----  Mejores Momentos  -----  */
+
+    .main-post__container-category {
+        bottom: 4rem;
+    }
+
+
+    /*  -----  Footer  -----  */
+
+    .footer__container {
+        width: 52%;
+        min-width: 52rem;
+        flex-direction: column;
+    }
+
+
+    /*  -----  Slider  -----  */
+
+    .slider__container--slider2 {
+        width: 100%;
+        height: 11.8rem;
+    }
+
+    .slider__container--slider3 {
+        width: 100%;
+        height: 24.8rem;
+    }
+
+    .slider__container--slider5 {
+        width: 100%;
+        height: 19.25rem;
+    }
+
+}
+
+
+
+/*  *****  Menor a 592px  --  Smartphone Pequeños  *****  */
+@media (max-width: 592px) {
+
+
+    /*  -----  Layout  -----  */
+
+    .layout {
+        width: 35%;
+        min-width: 35rem;
+        margin: 0 auto;
+    }
+
+     /*  -----  Slider  -----  */
+
+     .layout__slider {
+        grid-template-areas:
+            "slider1 slider1 slider1 slider1"
+            "slider2 slider2 slider2 slider2"
+            "slider3 slider3 slider3 slider3"
+            "slider4 slider4 slider5 slider5"
+        ;
+        column-gap: 0;
+        grid-template-columns: 100%;
+    }
+    
+     .slider__container--slider2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider__container--slider3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider__container--slider5 {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /*  -----  Mejores Momentos  -----  */
+
+    .highlights__posts {
+        flex-direction: row;
+    }
+
+    .highlights__post {
+        flex-basis: 100%;
+    }
+
+    
+    /*  -----  Videos  -----  */
+
+    .main-video__yt-video {
+        height: 20rem;
+    }
+
+    .videos__list {
+        flex-direction: column;
+    }
+
+    .videos__video {
+        width: 100%;
+    }
+
+    .carousel-games__item--hiden-small {
+        display: none;
+    }
+
+
+    /*  -----  News  -----  */
+
+    .news__main-post {
+        flex-direction: column;
+    }
+
+    .news__list {
+        flex-direction: column;
+    }
+
+
+    /*  -----  Juegos  -----  */
+    
+    .games__game {
+        width: 100%;
+    }
+
+    .games__container {
+        flex-direction: column;
+    }
+
+
+    /*  -----  Ultimos Articulos  -----  */
+
+    .posts__container {
+        flex-direction: column;
+    }
+
+    .posts__post {
+        flex-basis: 100%;
+    }
+
+    .post__img {
+        width: 100%;
+    }
+
+
+    /*  -----  Footer  -----  */
+
+    .footer__container {
+        width: 30%;
+        min-width: 30rem;
+    }
+
+    .footer__text {
+        width: 100%;
+    }
+   
+}
+
+
+
+
+/*  *****  Menor a 350px  --  Smartphone Aun Mas Pequeños  *****  */
+@media (max-width: 350px) {
+
+    .layout {
+        width: 100%;
+        min-width: auto;
+        margin: 0 auto;
+    }
+
+    .footer__container {
+        width: 100%;
+        min-width: auto;
+        margin: 0;
+    }
+
+}

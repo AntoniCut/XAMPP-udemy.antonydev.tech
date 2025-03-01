@@ -1,0 +1,91 @@
+/*  --------------------------------------------------  */
+/*  ----------  /udemy.antonydev.tech/  --------------  */
+/*  ----------  /master-css/  ------------------------  */
+/*  ----------  /assets/css/selectores.css  ----------  */
+/*  --------------------------------------------------  */
+
+
+/*  -----  SELECTORES  -----  */
+
+.selectores__titulo {
+    font-size: 24px;
+    color: gray;
+    padding: 10px;
+    background: blue;
+    border: dashed;
+}
+
+#selectores__menu > li > a {
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+#selectores__menu > li > ul > li > a {
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.selectores__footer a {
+    color: blueviolet;
+}
+
+.selectores__title,
+#descripcion {
+    border: 5px solid black;
+    padding: 15px;
+}
+
+.selectores__parrafo {
+    font-style: italic;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.selectores__parrafo1, 
+.selectores__parrafo3 {
+    background: green;
+    color: white;
+    padding: 30px;
+}
+
+.selectores__parrafo3 {
+    background-color: orange;
+    color: black;
+    padding: 30px;
+    ;
+}
+
+#usuario form {
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+
+}
+
+#usuario form * {
+    display: block;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 300px;
+}
+
+input[type="submit"] {
+    background: green;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#saludo h2 {
+    background: brown;
+}
