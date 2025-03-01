@@ -13,14 +13,6 @@ const favicon = `${base}/assets/favicon/html5-favicon.ico`;
 export const sectionHtml = [
 
     {
-        id: 'htmlIndex',
-        url: `${base}/aprendiendo-html5/index.html`,
-        title: 'Aprendiendo HTML 5',
-        path: '/aprendiendo-html5/',
-        favicon: favicon
-    },
-
-    {
         id: 'htmlEtiquetas',
         url: `${base}/aprendiendo-html5/etiquetas/index.html`,
         title: 'Etiquetas HTML 5',
