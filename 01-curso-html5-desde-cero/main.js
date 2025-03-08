@@ -14,7 +14,10 @@ $(function () {
 
     console.warn('main.js is loaded - jQuery is ready! - version:', $.fn.jquery);
 
+    const $layoutHeader = $('#layoutHeader');
+    const $layoutNavbar = $('#layoutNavbar');
     const $layoutContent = $('#layoutContent');
+    const $layoutFooter = $('#layoutFooter');
 
     const base = '/udemy.antonydev.tech/01-curso-html5-desde-cero';
 
@@ -24,47 +27,19 @@ $(function () {
         ...sectionCss
     ];
 
-    let isReloading = false;
 
 
-    //  ------------------------------------------------------------------
-    //  ----------  Función para manejar la carga de contenido  ----------
-    //  ------------------------------------------------------------------
-    function loadContent($container, url, title, path, favicon) {
+    //  ---------------------------------------------------------------------
+    //  ----------  función para la Carga de los Componentes HTML  ----------
+    //  ---------------------------------------------------------------------
+    function loadInitialComponentsHtml() {
 
-        $container.load(url, function (response, status, xhr) {
+        $layoutHeader.load(`${base}/assets/components-html/header.html`);
+        $layoutNavbar.load(`${base}/assets/components-html/navbar.html`);
+        $layoutFooter.load(`${base}/assets/components-html/footer.html`);
 
-            if (status === "error") {
-                console.error(`Error al cargar la ruta: ${url}`, xhr.status, xhr.statusText);
-                $container.html('<p>Error 404: El contenido no se pudo cargar.</p>'); // Fallback
-
-            } else {
-
-                console.log(`Contenido cargado desde: ${url}`);
-
-                //  -----  Cambiamos el title de la página  -----
-                document.title = title;
-
-                //  -----  Solo cambia la URL si es diferente a la actual  -----
-                const newUrl = `${base}${path}`;
-                if (window.location.pathname !== newUrl) {
-                    history.pushState({ path: newUrl }, '', newUrl);
-                    console.log(`URL actualizada a: ${newUrl}`);
-                }
-
-                //  -----  Actualizar el favicon  -----
-
-                //  -----  referenciamos el favicon  -----
-                let $favicon = $('link[rel~="icon"]');
-
-                //  -----  Si No existe lo crea  -----
-                if ($favicon.length === 0) $favicon = $('<link rel="icon" type="image/x-icon">').appendTo('head');
-
-                //  -----  Cambia la ruta del favicon con una linea de tiempo para no ser cacheado  -----
-                $favicon.attr('href', `${favicon}?t=${new Date().getTime()}`);
-            }
-        });
     }
+
 
 
     //  -------------------------------------------------------------------
@@ -95,6 +70,50 @@ $(function () {
     }
 
 
+
+    //  ------------------------------------------------------------------
+    //  ----------  Función para manejar la carga de contenido  ----------
+    //  ------------------------------------------------------------------
+    function loadContent($container, url, title, path, favicon) {
+
+        $container.load(url, function (response, status, xhr) {
+
+            if (status === "error") {
+                console.clear();
+                console.error(`\nError al cargar la ruta: ${url}`, xhr.status, xhr.statusText);
+                $container.html('<p>Error 404: El contenido no se pudo cargar.</p>'); // Fallback
+
+            } else {
+
+                console.log(`\nContenido cargado desde: ${url}`);
+
+                //  -----  Cambiamos el title de la página  -----
+                document.title = title;
+
+                //  -----  Solo cambia la URL si es diferente a la actual  -----
+                const newUrl = `${base}${path}`;
+                if (window.location.pathname !== newUrl) {
+                    history.pushState({ path: newUrl }, '', newUrl);
+                    console.log(`\nURL actualizada a: ${newUrl}`);
+                }
+
+
+                //  -----  Actualizar el favicon  -----
+
+                //  -----  referenciamos el favicon  -----
+                let $favicon = $('link[rel~="icon"]');
+
+                //  -----  Si No existe lo crea  -----
+                if ($favicon.length === 0) $favicon = $('<link rel="icon" type="image/x-icon">').appendTo('head');
+
+                //  -----  Cambia la ruta del favicon con una linea de tiempo para no ser cacheado  -----
+                $favicon.attr('href', `${favicon}?t=${new Date().getTime()}`);
+            }
+        });
+    }
+
+
+
     //  -----------------------------------------------------------
     //  ----------  Manejador de clics para los enlaces  ----------
     //  -----------------------------------------------------------
@@ -107,10 +126,11 @@ $(function () {
         const section = allSections.find(sec => sec.id === id);
 
         if (section) {
-            console.log(`Clic en: ${id}`);
+            console.log(`\nclick en: ${id}`);
             loadContent($layoutContent, section.url, section.title, section.path, section.favicon);
         }
     });
+
 
 
     //  ----------------------------------------------------------
@@ -118,52 +138,46 @@ $(function () {
     //  ----------------------------------------------------------
 
     window.addEventListener('popstate', function (event) {
-        console.log('Navegación en el historial detectada:', event.state?.path || window.location.pathname);
+        
+        console.clear();
+        console.log('\nNavegación en el historial detectada:', event.state?.path || window.location.pathname);
 
-        // 📌 Usar `event.state.path` si está disponible, si no, tomar la URL actual
+        //  -----  Usar `event.state.path` si está disponible, si no, tomar la URL actual  -----
         const matchedPath = event.state?.path ? event.state.path.replace(base, '') : window.location.pathname.replace(base, '');
         const matchedSection = allSections.find(section => section.path === matchedPath);
 
         if (matchedSection) {
-            console.log(`Cargando sección desde historial: ${matchedPath}`);
+            console.log(`\nCargando sección desde historial: ${matchedPath}`);
             loadContent($layoutContent, matchedSection.url, matchedSection.title, matchedSection.path, matchedSection.favicon);
         } else {
-            console.log('Cargando página por defecto desde historial');
+            console.log('\nCargando página por defecto desde historial');
             loadInitialContent();
-            //$layoutContent.load(`${base}/home/index.html`);
         }
+
     });
 
 
-    //  ----------------------------------------------------------------
-    //  ----------  Escuchar el evento de salir de la página  ----------
-    //  ----------------------------------------------------------------
-    // window.addEventListener("beforeunload", function (event) {
-
-    //     //  -----  Mostrar un mensaje de advertencia al intentar abandonar la página  -----
-    //     const message = "¿Estás seguro de que deseas salir?";
-    //     event.returnValue = message;  // Standard para algunos navegadores
-    //     return message;  // Necesario para otros navegadores
-    // });
 
 
     window.addEventListener("beforeunload", function (event) {
-        
-        if (!isReloading) {
-            loadInitialContent();
+        // Detectar si es un refresh (F5 o Ctrl+R)
+        if (performance.navigation.type === 1) {
+            return; // No hacer nada si es una recarga
+            
         }
+    
+        // Si es una navegación o cierre de pestaña, ejecutar la acción
+        window.open('/udemy.antonydev.tech/01-curso-html5-desde-cero/index.html', '_blank');
     });
 
-    // //  ----------  Detecta si la página está recargando y previene el evento  ----------
-    window.addEventListener("unload", function () {
-        isReloading = true;
-    });
 
 
 
 
-
-    //  -----  cargamos el contenido inicial  -----
+    //  ----------------------------------------------------------------------------
+    //  ----------  Cargamos los Componentes HTML y el Contenido Inicial  ----------
+    //  ----------------------------------------------------------------------------
+    loadInitialComponentsHtml();
     loadInitialContent();
 
 
