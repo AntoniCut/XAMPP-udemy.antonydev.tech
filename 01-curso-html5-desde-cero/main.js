@@ -50,19 +50,24 @@ $(function () {
         const initialPath = window.location.pathname.replace(base, '');
         const initialSection = allSections.find(section => section.path === initialPath);
 
-        if (initialSection)
+        if (initialSection) 
 
-            loadContent($layoutContent, initialSection.url, initialSection.title, initialSection.path, initialSection.favicon);
-
-        else
+            loadContent($layoutContent, initialSection.url, initialSection.title, initialSection.path, initialSection.favicon, initialSection.headerTitle);
+                        
+        else {
 
             loadContent(
                 $layoutContent,
                 `${base}/home/index.html`,
                 'Curso HTML 5 desde cero',
                 '/',
-                `${base}/assets/favicon/html5-favicon.ico`);
+                `${base}/assets/favicon/html5-favicon.ico`,
+                'Curso HTML 5 desde cero'
+            );
 
+            $layoutNavbar.load(`${base}/assets/components-html/navbar.html`);
+        
+        }
 
         //  -----  Guarda el estado inicial para que el botón "Atrás" funcione correctamente  -----
         history.replaceState({ path: window.location.pathname }, '', window.location.pathname);
@@ -74,7 +79,7 @@ $(function () {
     //  ------------------------------------------------------------------
     //  ----------  Función para manejar la carga de contenido  ----------
     //  ------------------------------------------------------------------
-    function loadContent($container, url, title, path, favicon) {
+    function loadContent($container, url, pageTitle, path, favicon, headerTitle) {
 
         $container.load(url, function (response, status, xhr) {
 
@@ -88,7 +93,7 @@ $(function () {
                 console.log(`\nContenido cargado desde: ${url}`);
 
                 //  -----  Cambiamos el title de la página  -----
-                document.title = title;
+                document.title = pageTitle;
 
                 //  -----  Solo cambia la URL si es diferente a la actual  -----
                 const newUrl = `${base}${path}`;
@@ -96,7 +101,6 @@ $(function () {
                     history.pushState({ path: newUrl }, '', newUrl);
                     console.log(`\nURL actualizada a: ${newUrl}`);
                 }
-
 
                 //  -----  Actualizar el favicon  -----
 
@@ -108,6 +112,11 @@ $(function () {
 
                 //  -----  Cambia la ruta del favicon con una linea de tiempo para no ser cacheado  -----
                 $favicon.attr('href', `${favicon}?t=${new Date().getTime()}`);
+
+                //  -----  Cambiamos el Encabezado h1 de la Página  -----
+                $layoutHeader.html(`<h1> ${headerTitle} </h1>`);
+
+                
             }
         });
     }
@@ -126,9 +135,14 @@ $(function () {
         const section = allSections.find(sec => sec.id === id);
 
         if (section) {
+            
             console.log(`\nclick en: ${id}`);
-            loadContent($layoutContent, section.url, section.title, section.path, section.favicon);
+            loadContent($layoutContent, section.url, section.title, section.path, section.favicon, section.headerTitle);
+            $layoutNavbar.load(`${base}/assets/components-html/go-home.html`);
+            
         }
+
+        if(id === 'htmlHome') $layoutNavbar.load(`${base}/assets/components-html/navbar.html`)
     });
 
 
@@ -147,11 +161,20 @@ $(function () {
         const matchedSection = allSections.find(section => section.path === matchedPath);
 
         if (matchedSection) {
+
             console.log(`\nCargando sección desde historial: ${matchedPath}`);
-            loadContent($layoutContent, matchedSection.url, matchedSection.title, matchedSection.path, matchedSection.favicon);
+
+            loadContent($layoutContent, matchedSection.url, matchedSection.title, matchedSection.path, matchedSection.favicon, matchedSection.headerTitle);
+            $layoutNavbar.load(`${base}/assets/components-html/go-home.html`);
+
+            if(matchedSection.path === '/') $layoutNavbar.load(`${base}/assets/components-html/navbar.html`);
+            
+
         } else {
+            
             console.log('\nCargando página por defecto desde historial');
             loadInitialContent();
+            
         }
 
     });
@@ -159,6 +182,9 @@ $(function () {
 
 
 
+    //  ---------------------------------------------
+    //  ----------  Al recargar la página  ----------
+    //  ---------------------------------------------
     window.addEventListener("beforeunload", function (event) {
         // Detectar si es un refresh (F5 o Ctrl+R)
         if (performance.navigation.type === 1) {
@@ -169,8 +195,6 @@ $(function () {
         // Si es una navegación o cierre de pestaña, ejecutar la acción
         window.open('/udemy.antonydev.tech/01-curso-html5-desde-cero/index.html', '_blank');
     });
-
-
 
 
 

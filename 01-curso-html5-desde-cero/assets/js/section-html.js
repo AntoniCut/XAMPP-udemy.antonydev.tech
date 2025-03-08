@@ -13,11 +13,21 @@ const favicon = `${base}/assets/favicon/html5-favicon.ico`;
 export const sectionHtml = [
 
     {
+        id: 'htmlHome',
+        url: `${base}/home/index.html`,
+        title: 'Curso HTML 5 desde cero',
+        path: '/',
+        favicon: favicon,
+        headerTitle: 'Curso HTML 5 desde cero'
+    },
+
+    {
         id: 'htmlEtiquetas',
         url: `${base}/aprendiendo-html5/etiquetas/index.html`,
         title: 'Etiquetas HTML 5',
         path: '/aprendiendo-html5/etiquetas/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Etiquetas HTML 5'
     },
 
     {
@@ -25,7 +35,8 @@ export const sectionHtml = [
         url: `${base}/aprendiendo-html5/estructura/index.html`,
         title: 'Estructura de un documento HTML5',
         path: '/aprendiendo-html5/estructura/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Estructura de un documento HTML5',
 
     },
 
@@ -34,7 +45,8 @@ export const sectionHtml = [
         url: `${base}/aprendiendo-html5/listas/index.html`,
         title: 'Listas en HTML5',
         path: '/aprendiendo-html5/listas/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Listas en HTML5'
     },
 
     {
@@ -42,7 +54,8 @@ export const sectionHtml = [
         url: `${base}/aprendiendo-html5/imagenes/index.html`,
         title: 'Imagenes en HTML5',
         path: '/aprendiendo-html5/imagenes/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Imagenes en HTML5'
     },
 
     {
@@ -50,7 +63,8 @@ export const sectionHtml = [
         url: `${base}/aprendiendo-html5/audio/index.html`,
         title: 'Audios en HTML5',
         path: '/aprendiendo-html5/audio/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Audios en HTML5'
     },
 
     {
@@ -58,7 +72,8 @@ export const sectionHtml = [
         url: `${base}/aprendiendo-html5/video/index.html`,
         title: 'Videos en HTML5',
         path: '/aprendiendo-html5/video/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Videos en HTML5'
     },
 
     {
@@ -66,7 +81,8 @@ export const sectionHtml = [
         url: `${base}/aprendiendo-html5/iframe/index.html`,
         title: 'iFrames en HTML5',
         path: '/aprendiendo-html5/iframe/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'iFrames en HTML5'
     },
 
     {
@@ -74,7 +90,8 @@ export const sectionHtml = [
         url: `${base}/aprendiendo-html5/tablas/index.html`,
         title: 'Tablas en HTML5',
         path: '/aprendiendo-html5/tablas/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Tablas en HTML5'
     },
 
     {
@@ -82,7 +99,8 @@ export const sectionHtml = [
         url: `${base}/aprendiendo-html5/formularios/index.html`,
         title: 'Formularios en HTML5',
         path: '/aprendiendo-html5/formularios/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Formularios en HTML5'
     },
 
     {
@@ -90,7 +108,8 @@ export const sectionHtml = [
         url: `${base}/aprendiendo-html5/mas-etiquetas-html5/index.html`,
         title: 'Mas Etiquetas en HTML5',
         path: '/aprendiendo-html5/mas-etiquetas-html5/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Mas Etiquetas en HTML5'
     }
     
 ];
