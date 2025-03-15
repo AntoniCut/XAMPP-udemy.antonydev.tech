@@ -1,0 +1,170 @@
+/*  ------------------------------------------------  */
+/*  ----------  /udemy.antonydev.tech/  ------------  */
+/*  ----------  /curso-html5-desde-cero/  ----------  */
+/*  ----------  /assets/styles.css  ----------------  */
+/*  ------------------------------------------------  */
+
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-family: Arial, sans-serif;
+    /* background-color: #e78459; */
+    background: url('/01-curso-html5-desde-cero/assets/background/background-html5.jpeg');
+    background-size: cover;                 
+    background-repeat: no-repeat;           
+    background-position: center center;     
+    background-attachment: fixed;
+}
+
+.layout {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*  -----  Menú de Navegación  -----  */
+
+/* Estilo base del menú principal */
+.layout__navbar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    padding: 10px 20px;
+    /* text-align: center; */
+}
+
+.navbar__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__item {
+    position: relative; 
+}
+
+.navbar__item > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar__item > a:hover {
+    background-color: #555;
+}
+
+/* Estilo del submenú */
+.navbar-submenu__list {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    position: absolute;
+    top: 100%; /* Posicionar debajo del elemento principal */
+    left: 0;
+    background-color: #444;
+    /* min-width: 250px; */
+    display: none; /* Ocultar el submenú por defecto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar-submenu__item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar-submenu__item a:hover {
+    background-color: #555;
+}
+
+/* Mostrar el submenú al hacer hover sobre el elemento principal */
+.navbar__item:hover .navbar-submenu__list {
+    display: block;
+}
+
+
+/*  -----  Contenido  -----  */
+
+.layout__content {
+    width: 100%;
+    max-width: 1024px;
+    margin: 40px;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #e78459;
+    flex-grow: 1;
+    
+}
+
+.banner {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+
+/*  -----  Footer  -----  */
+
+.layout__footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+
+
+.section-imagenes__container,
+.section-iframe__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+
+img {
+    width: 300px;
+    height: auto
+}
+
+button,
+form input[type="submit"],
+form input[type="reset"] {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+button:hover,
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: rgb(21, 56, 121) ;
+}
