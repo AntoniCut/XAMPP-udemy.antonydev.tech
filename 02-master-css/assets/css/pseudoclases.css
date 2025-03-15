@@ -1,0 +1,63 @@
+/*  ----------------------------------------------------  */
+/*  ----------  /udemy.antonydev.tech/  ----------------  */
+/*  ----------  /master-css/  --------------------------  */
+/*  ----------  /assets/css/pseudoclases.css  ----------  */
+/*  ----------------------------------------------------  */
+
+
+/*  -----  Pseudoclases  -----  */
+
+.pseudoclases__title {
+    font-size: 24px;
+}
+
+ul .pseudoclases__item {
+    font-size: 20px;
+}
+
+ul .pseudoclases__item:first-child {
+    color: purple;
+    font-weight: bold;
+}
+
+ul .pseudoclases__item:nth-child(2) {
+    color: orange;
+    font-weight: bold;
+}
+
+ul .pseudoclases__item:last-child {
+    color: gray;
+    font-weight: bold;
+}
+
+#mi-enlace {
+    font-size: 30px;
+    color: lightsalmon;
+}
+
+#mi-enlace:link {
+    color: red;
+}
+
+#mi-enlace:visited {
+    color: orangered;
+
+}
+
+#mi-enlace:hover {
+    color: blue;
+}
+
+#mi-enlace:active {
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.pseudoclases__input {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.pseudoclases__input:focus {
+    border: 4px dashed red;
+}

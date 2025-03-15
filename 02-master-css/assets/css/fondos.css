@@ -1,0 +1,46 @@
+/*  ----------------------------------------------  */
+/*  ----------  /udemy.antonydev.tech/  ----------  */
+/*  ----------  /master-css/  --------------------  */
+/*  ----------  /assets/css/fondos.css  ----------  */
+/*  ----------------------------------------------  */
+
+
+/*  -----  Fondos  -----  */
+.fondos__title {
+    font-size: 24px;
+}
+
+.fondos__container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/udemy.antonydev.tech/master-css/assets/imagenes/fondo1.jpeg');
+    background-attachment: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#fondos__caja {
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgba(0, 68, 255, 0.507);
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    /*vertical-align: top;*/
+}
+
+.fondos__subtitle {
+    font-size: 24px;
+    text-align: center;
+}
+
+.fondos__parrafo {
+    font-size: 14px;
+    text-align: justify;
+    color: #222;
+    margin: 20px;
+}

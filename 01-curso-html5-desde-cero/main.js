@@ -13,7 +13,7 @@ import { sectionCss } from '/01-curso-html5-desde-cero/assets/js/section-css.js'
 $(function () {
     
 
-    //  ----------  Documento Cargado  -----
+    //  ----------  Documento Cargado  ----------
     console.warn('main.js is loaded - jQuery version:', $.fn.jquery);
 
 

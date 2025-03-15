@@ -1,0 +1,126 @@
+/*  ----------------------------------------------  */
+/*  ----------  /udemy.antonydev.tech/  ----------  */
+/*  ----------  /master-css/  --------------------  */
+/*  ----------  /assets/css/sass.css  ------------  */
+/*  ----------------------------------------------  */
+
+
+/*  -----  Preprocesador SASS  -----  */
+
+.saas__title {
+    font-size: 24px;
+    color: pink;
+}
+
+.saas__subtitle {
+    color: rgb(122, 20, 20);
+}
+
+.saas__cajas {
+    width: 80%;
+    padding: 30px;
+    display: inline-block;
+    border: 5px solid green;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px yellow;
+    text-align: center;
+}
+
+.saas__caja {
+    float: left;
+    width: calc(33.33% - 60px);
+    margin: 0 30px;
+    text-align: center;
+    background-color: white;
+    border: 5px solid red;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.saas__caja h3 {
+    color: blue;
+}
+
+.saas__caja p {
+    color: green;
+}
+
+.saas__caja .info {
+    font-size: 10px;
+}
+
+.saas__caja .info .autor {
+    font-size: 15px;
+    color: orange;
+}
+
+.saas__listado {
+    width: 50%;
+    border: 5px solid green;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px yellow;
+    text-align: left;
+    padding: 50px 0;
+    padding-left: 100px;
+}
+
+.saas__alert-success, 
+.saas__alert-danger, 
+.saas__alert {
+    border: 1px solid gray;
+    background: #133d38;
+    color: gray;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.saas__alert-danger {
+    color: red;
+    border-color: red;
+}
+
+.saas__alert-success {
+    color: green;
+    border-color: green;
+}
+
+.saas__clearfix {
+    clear: both;
+}
+
+.saas__listado ul li:nth-child(1) {
+    font-size: 10px;
+}
+
+.saas__listado ul li:nth-child(2) {
+    font-size: 15px;
+}
+
+.saas__listado ul li:nth-child(3) {
+    font-size: 20px;
+}
+
+.saas__listado ul li:nth-child(4) {
+    font-size: 30px;
+}
+
+.saas__listado ul li:nth-child(5) {
+    font-size: 35px;
+}
+
+.saas__listado ul li:nth-child(6) {
+    font-size: 40px;
+}
+
+.saas__listado ul li:nth-child(7) {
+    font-size: 50px;
+}
+
+.saas__listado ul li:nth-child(8) {
+    font-size: 55px;
+}
+
+.saas__listado ul li:nth-child(9) {
+    font-size: 60px;
+}
