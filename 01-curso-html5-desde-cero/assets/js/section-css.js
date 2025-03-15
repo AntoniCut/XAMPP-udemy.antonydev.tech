@@ -17,7 +17,8 @@ export const sectionCss = [
         url: `${base}/aprendiendo-css/index.html`,
         title: 'Aprendiendo CSS',
         path: '/aprendiendo-css/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Aprendiendo CSS'
     }
 
 ];

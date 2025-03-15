@@ -1,8 +1,8 @@
-//  ------------------------------------------------
-//  ----------  /udemy.antonydev.tech/  ------------
-//  ----------  /curso-html5-desde-cero/  ----------
-//  ----------  /assets/js/sections.js  ------------
-//  ------------------------------------------------
+//  -----------------------------------------------------------
+//  ----------  /udemy.antonydev.tech/  -----------------------
+//  ----------  /curso-html5-desde-cero/  ---------------------
+//  ----------  /assets/js/section-proyecto-html.js  ----------
+//  -----------------------------------------------------------
 
 
 const base = '/01-curso-html5-desde-cero';
@@ -17,7 +17,8 @@ export const sectionProyectoHtml = [
         url: `${base}/proyecto-html5/index.html`,
         title: 'Proyecto HTML 5',
         path: '/proyecto-html5/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Proyecto HTML 5'
     },
 
     {
@@ -25,7 +26,8 @@ export const sectionProyectoHtml = [
         url: `${base}/proyecto-html5/multimedia/index.html`,
         title: 'Multimedia',
         path: '/proyecto-html5/multimedia/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Multimedia'
     },
 
     {
@@ -33,7 +35,8 @@ export const sectionProyectoHtml = [
         url: `${base}/proyecto-html5/dieta/index.html`,
         title: 'Dieta',
         path: '/proyecto-html5/dieta/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Dieta'
     },
 
     {
@@ -41,7 +44,8 @@ export const sectionProyectoHtml = [
         url: `${base}/proyecto-html5/contacto/index.html`,
         title: 'Contacto',
         path: '/proyecto-html5/contacto/',
-        favicon: favicon
+        favicon: favicon,
+        headerTitle: 'Contacto'
     }
     
 ];
