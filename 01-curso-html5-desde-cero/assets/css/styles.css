@@ -5,14 +5,27 @@
 /*  ------------------------------------------------  */
 
 
-body {
+@import '/01-curso-html5-desde-cero/assets/css/navbar.css';
+@import '/01-curso-html5-desde-cero/assets/css/estilos-proyecto-css.css';
+
+
+
+html{
+    font-size: 10px;
+}
+
+body{
     width: 100%;
-    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    font-family: Arial, sans-serif;
-    background-color: #e78459;
+    flex-direction: row;
+    justify-content: center;     
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+
+.background-html5 {
     background: url('/01-curso-html5-desde-cero/assets/background/background-html5.jpeg');
     background-size: cover;                 
     background-repeat: no-repeat;           
@@ -20,80 +33,35 @@ body {
     background-attachment: fixed;
 }
 
-.layout {
+.layout{
     width: 100%;
-    min-height: 100vh;
-    position: absolute;
+    min-height: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-
-/*  -----  Menú de Navegación  -----  */
-
-/* Estilo base del menú principal */
-.layout__navbar {
-    display: flex;
     flex-wrap: wrap;
-    background-color: #333;
-    padding: 10px 20px;
-    /* text-align: center; */
 }
 
-.navbar__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
 
-.navbar__item {
-    position: relative; 
-}
+/*  -----  Header  -----  */
 
-.navbar__item > a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    transition: background-color 0.3s ease;
-}
+.layout__header {
+    width: 100%;
+    max-width: 100rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #FEC31B;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+} 
 
-.navbar__item > a:hover {
-    background-color: #555;
-}
-
-/* Estilo del submenú */
-.navbar-submenu__list {
-    list-style-type: none;
-    padding: 10px 0;
-    margin: 0;
-    position: absolute;
-    top: 100%; /* Posicionar debajo del elemento principal */
-    left: 0;
-    background-color: #444;
-    /* min-width: 250px; */
-    display: none; /* Ocultar el submenú por defecto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-.navbar-submenu__item a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.navbar-submenu__item a:hover {
-    background-color: #555;
-}
-
-/* Mostrar el submenú al hacer hover sobre el elemento principal */
-.navbar__item:hover .navbar-submenu__list {
-    display: block;
+.header__title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #FF6622;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -101,17 +69,14 @@ body {
 
 .layout__content {
     width: 100%;
-    max-width: 1024px;
-    margin: 40px;
-    padding: 40px 60px;
+    margin-top: 2rem;
+    padding: 4rem 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    background-color: #e78459;
+    gap: 2rem;
     flex-grow: 1;
-    
 }
 
 .banner {
@@ -121,14 +86,43 @@ body {
 }
 
 
+.content__etiquetas {
+    width: 100%;
+    max-width: 100rem;
+    padding: 3rem 6rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #FEC31B;
+    box-shadow: 4px 4px 3px gray;
+}
+
+.content__etiquetas h2:first-child {
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+}
+
+
 /*  -----  Footer  -----  */
 
 .layout__footer {
     width: 100%;
-    background-color: #333;
+    max-width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background-color: #000;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    /* text-align: center; */
+    padding: 5rem 0;
+    margin-top: 5rem;
     margin-bottom: 0;
 }
 
@@ -167,5 +161,15 @@ form input[type="reset"] {
 button:hover,
 form input[type="submit"]:hover,
 form input[type="reset"]:hover {
-    background-color: rgb(21, 56, 121) ;
+    background-color: rgb(21, 56, 121);
+}
+
+
+@media (max-width: 1400px) {
+    
+    .layout__header {
+        margin-top: 10rem;
+    }
+
+    
 }

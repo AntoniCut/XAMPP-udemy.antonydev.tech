@@ -1,18 +1,19 @@
-/*  ----------------------------------------------  */
-/*  ----------  /udemy.antonydev.tech/  ----------  */
-/*  ----------  /assets/css/styles.css  ----------  */
-/*  ----------------------------------------------  */
+/*  ----------------------------------------------------  */
+/*  ----------  /xampp-udemy.antonydev.tech/  ----------  */
+/*  ----------  /assets/css/styles.css  ----------------  */
+/*  ----------------------------------------------------  */
 
 
 body {
     
     margin: auto;
     width: 100%;
-    min-height: 100vh; /* Altura mínima de la pantalla */
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
+    background-color: #E8EFFA;
 }
 
 

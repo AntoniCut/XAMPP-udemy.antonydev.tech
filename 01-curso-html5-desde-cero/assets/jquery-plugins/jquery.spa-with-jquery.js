@@ -16,6 +16,7 @@
             sections: [],
             base: '',
             layoutHeader: '#layoutHeader',
+            layoutGoHome: '#layoutGoHome',
             layoutNavbar: '#layoutNavbar',
             layoutContent: '#layoutContent',
             layoutFooter: '#layoutFooter',
@@ -33,18 +34,41 @@
 
         //  ----------  referencias al HTML  ----------
         const $layoutHeader = $(settings.layoutHeader);
+        const $layoutGoHome = $(settings.layoutGoHome);
         const $layoutNavbar = $(settings.layoutNavbar);
         const $layoutContent = $(settings.layoutContent);
         const $layoutFooter = $(settings.layoutFooter);
+
 
 
         //  ---------------------------------------------------------------------
         //  ----------  función para la Carga de los Componentes HTML  ----------
         //  ---------------------------------------------------------------------
         function loadInitialComponentsHtml() {
+
             $layoutHeader.load(settings.urlHeader);
             $layoutNavbar.load(settings.urlNavBar);
             $layoutFooter.load(settings.urlFooter);
+
+            draggableComponentsHtml();
+
+        }
+
+
+        function draggableComponentsHtml() {
+
+             //  ----------  Hacemos los menús arrastrables  ----------
+             $layoutNavbar.draggable({
+                containment: 'window',
+                scroll: false
+            });
+
+            //  ----------  Hacemos los menús arrastrables  ----------
+            $layoutGoHome.draggable({
+                containment: 'window',
+                scroll: false
+            });
+
         }
 
 
@@ -70,6 +94,7 @@
                 });
 
                 $layoutNavbar.load(settings.urlNavBar);
+
             }
 
             //  ----------  Guarda el estado inicial para que el botón "Atrás" funcione correctamente  ----------
@@ -105,7 +130,7 @@
                     updateFavicon(section.favicon);
 
                     //  -----  Cambiamos el Encabezado h1 de la Página  -----
-                    $layoutHeader.html(`<h1>${section.headerTitle}</h1>`);
+                    $layoutHeader.html(`<h1 class="header__title">${section.headerTitle}</h1>`);
 
                     //  -----  Cargar script de las secciones si estos existen  -----
                     if (section.scriptFiles) {
@@ -189,18 +214,29 @@
             //  -----  si hemos clicado en una seccion del menú  -----
             if (section) {
 
+                //  -----  ocultamos el menú principal  -----
+                $layoutNavbar.hide();
+
+                //  -----  cargamos y mostramos el menú para ir a la home  -----
+                $layoutGoHome.load(settings.urlGoHome);
+                $layoutGoHome.show();
+
                 //  -----  cargamos el contenido de la sección  -----
                 loadContent(section);
 
-                //  -----  cargamos el menú para ir a la home  -----
-                $layoutNavbar.load(settings.urlGoHome);
             }
 
             //  -----  si hemos clicado en el menu para ir a la home  -----
-            if (id === 'htmlHome')
+            if (id === 'htmlHome') {
+
+                //  -----  ocultamos el menu para ir a la home  -----
+                $layoutGoHome.hide();
 
                 //  -----  cargamos el menu principal  -----
                 $layoutNavbar.load(settings.urlNavBar);
+                $layoutNavbar.show();
+            }
+
 
         });
 
@@ -220,6 +256,7 @@
                 $layoutNavbar.load(settings.urlGoHome);
 
                 if (matchedSection.path === '/')
+
                     $layoutNavbar.load(settings.urlNavBar);
 
             } else
@@ -237,7 +274,7 @@
 
             if (navigationEntries.length > 0 && navigationEntries[0].type === "reload") {
                 console.warn("🔄 Recarga de la Página");
-                
+
                 // 🔹 Actualizamos los estilos forzando la recarga
                 updateStylesheet('/01-curso-html5-desde-cero/assets/css/styles.css');
             }

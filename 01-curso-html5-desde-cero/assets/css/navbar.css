@@ -1,0 +1,103 @@
+/*  ------------------------------------------------  */
+/*  ----------  /udemy.antonydev.tech/  ------------  */
+/*  ----------  /curso-html5-desde-cero/  ----------  */
+/*  ----------  /assets/navbar.css  ----------------  */
+/*  ------------------------------------------------  */
+
+
+/*  -----  Menú de Navegación  -----  */
+
+/*  -----  Estilo base del menú principal  ----- */
+
+.layout__navbar,
+.layout__go-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333;
+    padding: 0.25rem 2rem;
+    margin-top: 4rem;
+}
+
+.layout__go-home {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+}
+
+.navbar__list,
+.navbar__list-footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__item,
+.navbar__item-footer {
+    position: relative; 
+}
+
+.navbar__item > a,
+.navbar__item-footer > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar__item > a:hover {
+    background-color: #555;
+}
+
+
+/*  -----  Estilo del submenú  -----  */
+
+.navbar-submenu__list,
+.navbar-submenu__list-footer {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    position: absolute;
+    top: 100%; /* Posicionar debajo del elemento principal */
+    left: 0;
+    background-color: #444;
+    /* min-width: 250px; */
+    display: none; /* Ocultar el submenú por defecto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar-submenu__list-footer {
+    display: block;
+    color: #ccc;
+    background-color: #000;
+}
+
+.navbar-submenu__item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar-submenu__item-footer {
+    padding-left: 4rem;
+}
+.navbar-submenu__item-footer a {
+    color: #ccc;
+}
+
+.navbar-submenu__item a:hover {
+    background-color: #555;
+}
+
+
+/*  -----  Mostrar el submenú al hacer hover sobre el elemento principal  -----  */
+
+.navbar__item:hover .navbar-submenu__list {
+    display: block;
+}

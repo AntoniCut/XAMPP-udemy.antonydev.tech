@@ -16,16 +16,17 @@
     <link rel="shortcut icon" href="/01-curso-html5-desde-cero/assets/favicon/html5-favicon.ico" type="image/x-icon">
     <title> Curso HTML 5 desde Cero </title>
 
+    <link rel="stylesheet" href="/01-curso-html5-desde-cero/assets/css/reset.css">
     <link rel="stylesheet" href="/01-curso-html5-desde-cero/assets/css/styles.css">
-    <link rel="stylesheet" href="/01-curso-html5-desde-cero/assets/css/estilos.css">
-    
+        
     <script src="/01-curso-html5-desde-cero/assets/jquery/core/jquery-3.7.1.min.js"> </script>
+    <script src="/01-curso-html5-desde-cero/assets/jquery/ui/jquery-ui.min.js"> </script>
     <script src="/01-curso-html5-desde-cero/assets/jquery-plugins/jquery.spa-with-jquery.js"> </script>
     <script type="module" src="/01-curso-html5-desde-cero/main.js" defer> </script> 
        
 </head>
 
-<body>
+<body class="background-html5">
 
 
     <div id="layout" class="layout">
@@ -34,6 +35,10 @@
             <!--  ----------  load header.html  ----------  -->
         </header>
     
+        <nav id="layoutGoHome" class="layout__go-home">
+            <!--  ----------  load go-to-home.html  ----------  -->
+        </nav>
+
         <nav id="layoutNavbar" class="layout__navbar">
             <!--  ----------  load navbar.html  ----------  -->
         </nav>
@@ -43,7 +48,7 @@
         </main>
     
         <footer id="layoutFooter" class="layout__footer">
-           <!--  ----------  load footer.html  ----------  -->
+            <!--  ----------  load footer.html  ----------  -->
         </footer>
 
     </div>

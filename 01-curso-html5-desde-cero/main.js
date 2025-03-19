@@ -28,15 +28,16 @@ $(function () {
     //  ----------  referencias al HTML  ----------
     const $layout = $('#layout');
     const layoutHeader = '#layoutHeader';
+    const layoutGoHome = '#layoutGoHome';
     const layoutNavbar = '#layoutNavbar';
     const layoutContent = '#layoutContent';
     const layoutFooter = '#layoutFooter';
 
-
+    
     //  ----------  URLs Component HTML  ----------
     const urlHeader = '/01-curso-html5-desde-cero/assets/components-html/header.html';
-    const urlNavBar =  '/01-curso-html5-desde-cero/assets/components-html/navbar.html';
     const urlGoHome = '/01-curso-html5-desde-cero/assets/components-html/go-home.html';
+    const urlNavBar =  '/01-curso-html5-desde-cero/assets/components-html/navbar.html';
     const urlFooter = '/01-curso-html5-desde-cero/assets/components-html/footer.html';
     const urlHome = '/01-curso-html5-desde-cero/home/index.html';
 
@@ -53,12 +54,13 @@ $(function () {
         sections: allSections,
         base,
         layoutHeader,
+        layoutGoHome,
         layoutNavbar,
         layoutContent,
         layoutFooter,
         urlHeader,
-        urlNavBar,
         urlGoHome,
+        urlNavBar,
         urlFooter,
         urlHome,
         titlePage,
